@@ -1,0 +1,30 @@
+table.table {
+  border: 0;
+  border-collapse: collapse;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+table.table td,
+table.table th {
+  border: 1px solid #eee;
+  padding: 3px;
+}
+
+table.table.row-headings td {
+  text-align: center;
+}
+
+table.table.row-headings th {
+  text-align: left;
+}
+
+table.table.col-headings td,
+table.table.col-headings th {
+  text-align: left;
+}
