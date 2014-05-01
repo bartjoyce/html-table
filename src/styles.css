@@ -14,14 +14,12 @@ table.table td,
 table.table th {
   border: 1px solid #eee;
   padding: 3px;
+  min-width: 24px;
 }
 
-table.table.row-headings td {
-  text-align: center;
-}
-
+table.table.row-headings td,
 table.table.row-headings th {
-  text-align: left;
+  text-align: center;
 }
 
 table.table.col-headings td,

@@ -11,7 +11,7 @@ var Table = {};
 
     for (var i = 0; i < tableElements.length; i += 1)
       if (tableElements[i].tagName === 'TABLE')
-        Table.registerTable(tableElements[i]);
+        Table.registerElement(tableElements[i]);
   };
 
   Table.registerElement = function registerTable(element) {
