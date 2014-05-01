@@ -122,8 +122,8 @@ var Table = {};
 
     types.push(this);
 
-    if (tagNames.indexOf(this.tagName) === -1)
-      tagNames.push(this.tagName);
+    if (supportedTagNames.indexOf(this.tagName) === -1)
+      supportedTagNames.push(this.tagName);
 
     return this;
   };
@@ -178,7 +178,7 @@ var Table = {};
     },
     getComponentsForType: function(type) {
       var components = [];
-      var componentNames = Object.keys(Code.components);
+      var componentNames = Object.keys(Table.components);
 
       for (var i = 0; i < componentNames.length; i += 1) {
         var componentName = componentNames[i];
@@ -191,7 +191,7 @@ var Table = {};
       return components;
     },
     getComponentsForElement: function(element) {
-      return Table.util.getComponentsForType(Code.util.getElementType(element));
+      return Table.util.getComponentsForType(Table.util.getElementType(element));
     },
     getElementComponents: function(element) {
       return element.hasAttribute('data-components') ? element.getAttribute('data-components').split(' ') : [];
@@ -244,5 +244,5 @@ var Table = {};
   };
 
   /* Element updating system */
-  var updateEvent = new Code.EventObject('update');
+  var updateEvent = new Table.EventObject('update');
 })();
