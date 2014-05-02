@@ -138,17 +138,17 @@ var Table = {};
   /* Utility Functions */
   Table.util = {
     expandType: function(type) {
-      var types = [];
+      var expandedTypes = [];
 
       for (var i = 0; i < types.length; i += 1) {
         if (types[i].name === type)
           return [type];
 
         if (types[i].groups.indexOf(type) !== -1)
-          types.push(Table.types[i].name);
+          expandedTypes.push(types[i].name);
       }
 
-      return types;
+      return expandedTypes;
     },
     expandTypes: function(types) {
       var expandedTypes = [];
