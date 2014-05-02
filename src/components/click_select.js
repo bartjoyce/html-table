@@ -10,18 +10,8 @@
 
   /* Table deselection */
   var deselectAll = function deselectAll() {
-    selectedFields = [];
-
-    for (var i = 0; i < tableElements.length; i += 1)
-      deselectTable(tableElements[i]);
-  };
-
-  var deselectTable = function deselectTable(tableElement) {
-    var selectedElements = tableElement.getElementsByClassName('selected');
-    var index;
-
-    for (var i = 0; i < selectedElements.length; i += 1)
-      deselectElement(selectedElements[i]);
+    while (selectedFields.length > 0)
+      deselectElement(selectedFields[0]);
   };
 
   var deselectElement = function deselectElement(element) {
