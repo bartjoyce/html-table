@@ -9,5 +9,5 @@ You can try out html-table by downloading the repo and opening ``demo/index.html
 To-do
 -----
 - [x] Create core system
-- [ ] Implement selectable fields
+- [x] Implement selectable fields
 - [ ] Implement editable fields
