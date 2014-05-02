@@ -140,11 +140,11 @@ var Table = {};
     expandType: function(type) {
       var types = [];
 
-      for (var i = 0; i < Table.types.length; i += 1) {
-        if (Table.types[i].name === type)
+      for (var i = 0; i < types.length; i += 1) {
+        if (types[i].name === type)
           return [type];
 
-        if (Table.types[i].groups.indexOf(type) !== -1)
+        if (types[i].groups.indexOf(type) !== -1)
           types.push(Table.types[i].name);
       }
 
