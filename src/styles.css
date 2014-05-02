@@ -12,9 +12,15 @@ table.table {
 
 table.table td,
 table.table th {
-  border: 1px solid #eee;
+  border: 1px solid #dfdfdf;
   padding: 3px;
   min-width: 24px;
+  background-color: #fafafa;
+}
+
+table.table td.selected,
+table.table th.selected {
+  background-color: #eee;
 }
 
 table.table.row-headings td,
