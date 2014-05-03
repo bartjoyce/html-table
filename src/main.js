@@ -14,7 +14,7 @@ var Table = {};
         Table.registerElement(tableElements[i]);
   };
 
-  Table.registerElement = function registerTable(element) {
+  Table.registerElement = function registerElement(element) {
     if (!Table.util.isElement(element)) {
       for (var i = 0; i < element.children.length; i += 1)
         Table.registerElement(element.children[i]);
